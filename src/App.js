@@ -6,9 +6,9 @@ import Home from './pages/Home'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
 import User from './pages/User'
+import Description from './components/layout/Description'
 import { GithubProvider } from './context/github/GithubContext'
 import { AlertProvider } from './context/alert/AlertContext'
-
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
                   path='/'
                   element={
                     <>
+                      <Description />
                       <Alert />
                       <Home />
                     </>
